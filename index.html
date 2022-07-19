@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Weather Channal
+    </h1>
+    <div id="container">
+        <div id="leftSection">
+            <h2>Search for a City:</h2>
+            <input id="cityname" type="text" name="cityName" placeholder="City Name">
+            <button id="search" type="button">Search</button>
+            <div id="searchHistory"></div>
+
+        </div>
+        <div id="rightSection">
+           <div id="currentWeather">
+                <h1 id="selectedCity"></h1>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p> 
+                <p id="uvIndex"></p>
+           </div>
+
+           <div id="fiveDayForecast">
+                <div id="day1">
+                    <h3 id="day1-date">Day 1</h3>
+                    <img id="day1-icon"/>
+                    <p id="day1-temp"></p>
+                    <p id="day1-wind"></p>
+                    <p id="day1-humidity"></p> 
+                    <p id="day1-uvIndex"></p>
+                </div>
+                <div id="day2">
+                    <h3 id="day2-date"> Day 2</h3>
+                    <img id="day2-icon"/>
+                    <p id="day2-temp"></p>
+                    <p id="day2-temp"></p>
+                    <p id="day2-wind"></p>
+                    <p id="day2-humidity"></p> 
+                    <p id="day2-uvIndex"></p>
+
+                </div>
+                <div id="day3">
+                    <h3 id="day3-date"> Day 3</h3>
+                    <img id="day3-icon"/>
+                    <p id="day3-temp"></p>
+                    <p id="day3-temp"></p>
+                    <p id="day3-wind"></p>
+                    <p id="day3-humidity"></p> 
+                    <p id="day3-uvIndex"></p>
+                </div>
+                
+                <div id="day4">
+                    <h3 id="day4-date"> Day 4</h3>
+                    <img id="day4-icon"/>
+                    <p id="day4-temp"></p>
+                    <p id="day2-temp"></p>
+                    <p id="day4-wind"></p>
+                    <p id="day4-humidity"></p> 
+                    <p id="day4-uvIndex"></p>
+                </div>
+                <div id="day5">
+                    <h3 id="day5-date"> Day 5</h3>
+                    <img id="day5-icon"/>
+                    <p id="day5-temp"></p>
+                    <p id="day5-temp"></p>
+                    <p id="day5-wind"></p>
+                    <p id="day5-humidity"></p> 
+                    <p id="day5-uvIndex"></p>
+                </div>
+
+           </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
