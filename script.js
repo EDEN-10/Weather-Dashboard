@@ -63,7 +63,7 @@ function weatherData() {
     )
     }  
     
-    let geoCodingURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=d967c17ba23c3dfea9d963ac03b57dd0`;
+    let geoCodingURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=d967c17ba23c3dfea9d963ac03b57dd0`;
 
     fetch(geoCodingURL)
     .then(response => response.json())
@@ -72,7 +72,7 @@ function weatherData() {
         let lat = data[0].lat;
         let lon = data[0].lon
 
-        let oneCallURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=d967c17ba23c3dfea9d963ac03b57dd0`
+        let oneCallURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=d967c17ba23c3dfea9d963ac03b57dd0`;
 
         fetch(oneCallURL)
         .then(response => response.json())
